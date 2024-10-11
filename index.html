@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weather App made using HTML,CSS,Javascript and Weather API"
+    />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="card-container">
+        <div class="input-container">
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Search for a city..."
+          />
+        </div>
+        <div class="no-results">No Results 😓</div>
+        <span></span>
+        <div class="wrapper-container">
+          <h1>-----</h1>
+          <p class="date__time">---</p>
+          <button class="weather__type">---</button>
+          <img class="weather__logo" src="" alt="" />
+          <h2 class="weather__temperature">---</h2>
+          <div class="min-max__temperature">
+            Min:<span class="min__temp"></span>Max:<span class="max__temp"></span>
+          </div>
+          <div class="weather__info__container grid">
+            <div class="weather__details real-feel">
+              <img class="weather-icons" src="images/real_feel.svg" alt="" />
+              <div>
+                <p>Real Feel</p>
+                <p class="real__feel__temperature">30</p>
+              </div>
+            </div>
+            <div class="weather__details humidity">
+              <img
+                class="weather-icons"
+                src="images/humidity_percentage.svg"
+                alt=""
+              />
+              <div>
+                <p>humidity</p>
+                <p class="humidity__percentage">30</p>
+              </div>
+            </div>
+            <div class="weather__details wind">
+              <img class="weather-icons" src="images/air.svg" alt="" />
+              <div>
+                <p>Wind</p>
+                <p class="wind__speed">30</p>
+              </div>
+            </div>
+            <div class="weather__details pressure">
+              <img class="weather-icons" src="images/pressure.svg" alt="" />
+              <div>
+                <p>Pressure</p>
+                <p class="pressure__percentage">30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
