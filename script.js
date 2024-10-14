@@ -43,7 +43,7 @@ async function getjsonponse(location) {
       (time = new Date(json.location.localtime).toLocaleTimeString()),
       (dateTimeDay = date + ", at " + time),
       (noResults.textContent = ""),
-      (wrapperContainer.style.visibility = "visible"),
+      (wrapperContainer.style.display = "flex"),
       (heading.textContent = location),
       (dateTime.textContent = dateTimeDay),
       (weather__type.textContent = json.current.condition.text),
